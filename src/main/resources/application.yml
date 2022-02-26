@@ -1,0 +1,26 @@
+endpoints:
+  prometheus:
+    enabled: true
+    sensitive: false
+  info:
+    enabled: true
+    sensitive: false
+  metrics:
+    enabled: true
+    sensitive: false
+  health:
+    enabled: true
+    sensitive: false
+    details-visible: ANONYMOUS
+micronaut:
+  application:
+    name: serialization
+  metrics:
+    export:
+      prometheus:
+        enabled: true
+    enabled: true
+netty:
+  default:
+    allocator:
+      max-order: 3
